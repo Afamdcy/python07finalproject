@@ -5,19 +5,19 @@
     <form method="POST">
         {%csrf_token%}
         <fieldset class="from-group">
-            <legend class ="border-bottom mb-4"> Join Today</legend>
+            <legend class ="border-bottom mb-4"> Login Here</legend>
             {{form|crispy}}
         </fieldset>
         <div class="form-group">
-            <button class="btn btn-outline-info" type="submit"> Sign Up</button>
+            <button class="btn btn-outline-info" type="submit"> Login </button>
         </div>
     </form>
     <div class ="border-top pt-3">
         <small class="text-muted">
-             Alredy Have an account? <a class="ml-2" href="{% url 'login' %}">Alredy Have an account? Login Here</a>
+             Alredy Have an account? <a class="ml-2" href="{% url 'register'%}">Don't Have an account? Sign Up Here</a>
         </small>
     </div>
 
 </div>
-<h1>Register Page </h1>
-{%endblock %}
+<h1> Login Page </h1>
+{% endblock %}
